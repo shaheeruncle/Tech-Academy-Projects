@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    border-radius: 2px;
+    background-color: aqua;
+    font-weight: 300;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Optional: Adjust the height as needed */
+}
+ table, th,td {
+    border: 2px solid #000000;
+    padding: 10px;
+    width: 30%;
+}
+th {
+    color: blueviolet;
+    background-color: blue;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

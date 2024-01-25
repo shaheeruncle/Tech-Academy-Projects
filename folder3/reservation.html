@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Reservation Form</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="space.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Space Reservation</h1>
+    </header>
+
+    <section id="reservations">
+        <div class="flex-container">
+            <div class="reservation">
+                <h2>Make a Reservation</h2>
+                <p>Reserve a table or make a reservation to experience our services.</p>
+                <form id="reservationForm">
+                    <label for="firstName">First Name:</label>
+                    <input class="common-input" type="text" id="firstName" name="firstName" required>
+    
+                    <label for="lastName">Last Name:</label>
+                    <input class="common-input" type="text" id="lastName" name="lastName" required><br>
+    
+                    <label for="email">Email:</label>
+                    <input class="common-input" type="email" id="email" name="email" required><br>
+    
+                    <label for="phone">Phone:</label>
+                    <input class="common-input" type="tel" id="phone" name="phone" required>
+    
+                    <button type="submit">Submit Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        document.getElementById("reservationForm").addEventListener("submit", function (event) {
+            event.preventDefault(); 
+
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            alert("Reservation Details:\n\nFirst Name: " + firstName + "\nLast Name: " + lastName + "\nEmail: " + email + "\nPhone: " + phone);
+        });
+    </script>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+
+</html>
